@@ -4,10 +4,13 @@ import java.util.Scanner;
 
 public class RockPaperScissorGame {
 
+    //@TODO: If the fields are not declared as private they can be manipulated from outside
     Player player;
 
     Fist aiFist;
 
+    //@TODO: declare the methods access modifier: public, private or protected
+    //An instance of the object cannot be created from outside its package if the constructor is not declared as public
     //constructor
     RockPaperScissorGame(String playerName, int playerScore) {
         player = new Player(playerName, playerScore);
@@ -20,6 +23,7 @@ public class RockPaperScissorGame {
 
     }
 
+    //@FIXME: declare the methods access modifier: public, private or protected
     void playGame() {
         Scanner scanner = new Scanner(System.in);
         //Forloop börjar här
