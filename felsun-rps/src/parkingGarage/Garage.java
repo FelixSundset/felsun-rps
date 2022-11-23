@@ -42,6 +42,9 @@ public class Garage {
 
     public void inputMenu() {
         Scanner scanner = new Scanner(System.in);
+        boolean yn;
+        String svar = null;
+
 
         System.out.println("Hej, Vad vill du göra?");
         System.out.println("Parkera fordon, tryck 1");
@@ -63,7 +66,12 @@ public class Garage {
             scanner.nextLine();
             System.out.println("Vill du hämta: " +scanner.nextLine()+ "?");
             scanner.nextLine();
-            System.out.println("Tack för du hämta din bil, välkommen åter!");
+            if(svar.equals("Ja")) {
+                yn = true;
+            if(svar.equals("Nej"))
+                yn = false;
+                System.out.println("Tack för du hämta din bil, välkommen åter!");
+            }
 
 
         }
